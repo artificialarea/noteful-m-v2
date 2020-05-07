@@ -1,7 +1,7 @@
 import React from 'react';
-import config from './config';
-import ApiContext from './ApiContext';
-import ValidationError from './ValidationError'; // validating user input
+import config from '../config';
+import ApiContext from '../ApiContext';
+import ValidationError from '../ValidationError'; // validating user input
 import PropTypes from 'prop-types';
 
 class AddFolder extends React.Component {

@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import {Route, Link} from 'react-router-dom';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import NoteListNav from '../NoteListNav/NoteListNav';
 import NotePageNav from '../NotePageNav/NotePageNav';
 import NoteListMain from '../NoteListMain/NoteListMain';
 import NotePageMain from '../NotePageMain/NotePageMain';
 import ApiContext from '../ApiContext';
-import AddFolder from '../AddFolder';
-import AddNote from '../AddNote';
+import AddFolder from '../AddFolder/AddFolder';
+import AddNote from '../AddNote/AddNote';
 import config from '../config';
 import './App.css';
 import ErrorBoundary from '../ErrorBoundary'
@@ -107,7 +107,7 @@ class App extends Component {
 						<header className="App__header">
 							<h1>
 									<Link to="/">Noteful</Link>{' '}
-									{/* <FontAwesomeIcon icon="check-double" /> */}
+									<FontAwesomeIcon icon="check-double" />
 							</h1>
 						</header>
 						<main className="App__main">{this.renderMainRoutes()}</main>

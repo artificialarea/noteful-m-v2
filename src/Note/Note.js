@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import { format } from 'date-fns'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { format } from 'date-fns'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ApiContext from '../ApiContext'
 import config from '../config'
 import './Note.css'
@@ -50,7 +50,7 @@ export default class Note extends React.Component {
           type='button'
           onClick={this.handleClickDelete}
         >
-          {/* <FontAwesomeIcon icon='trash-alt' /> */}
+          <FontAwesomeIcon icon='trash-alt' />
           {' '}
           remove
         </button>
@@ -59,7 +59,7 @@ export default class Note extends React.Component {
             Modified
             {' '}
             <span className='Date'>
-              {/* {format(date_modified, 'Do MMM YYYY')} */}
+              {format(date_modified, 'Do MMM YYYY')}
             </span>
           </div>
         </div>
