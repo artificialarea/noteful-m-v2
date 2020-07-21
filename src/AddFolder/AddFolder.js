@@ -21,7 +21,7 @@ class AddFolder extends React.Component {
 		event.preventDefault();
 
 		const newFolder = JSON.stringify({
-			folder_name: this.state.name.value
+			name: this.state.name.value
 		})
 
 		fetch(`${config.API_ENDPOINT}/folders`,
