@@ -92,6 +92,7 @@ class App extends Component {
 	}
 
 	render() {
+        console.log(this.state)
 		const value = {
 				notes: this.state.notes,
 				folders: this.state.folders,
